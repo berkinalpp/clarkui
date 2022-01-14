@@ -15,12 +15,20 @@ npm install --save clarkui
 ```jsx
 import React, { Component } from 'react'
 
-import MyComponent from 'clarkui'
+import {Button} from 'clarkui'
 import 'clarkui/dist/index.css'
 
-class Example extends Component {
+class App extends Component {
   render() {
-    return <MyComponent />
+    return (
+      <div className="App">
+        <Button text="Glow Button" effect='glow'></Button>
+        <Button text="Door Button" effect='door'></Button>
+        <Button text="Shutter Up Button" effect='shutterUp'></Button>
+        <Button text="Shutter Down Button" effect='shutterDown'></Button>
+        <Button text="Double Button" effect='double'></Button>
+      </div>
+    ) 
   }
 }
 ```
